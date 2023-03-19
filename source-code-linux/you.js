@@ -3,6 +3,12 @@ var yOff = 5;
 var xPos = 400;
 var yPos = -100;
 var flagRun = 1;
+var element = document.querySelector("body");
+element.addEventListener("keydown", function(event) {
+  if ((event.altKey && event.code === 'F4') || (event.ctrlKey && event.code === 'KeyW')) {
+    return true;
+  }
+});
 
 //opens a window
 function openWindow(url) {
@@ -25,16 +31,12 @@ function procreate() {
 
 //returns true if alt+f4 is pressed
 function altf4key(event) {
-  if (event.altKey && event.code === 'F4') {
-      return true;
-  }
+  return (event.altKey && event.code === 'F4');
 }
 
 //returns true if ctrl+w is pressed
 function ctrlwkey(event) {
-  if (event.ctrlKey && event.code === 'KeyW') {
-      return true;
-  }
+  return (event.ctrlKey && event.code === 'KeyW');
 }
 
 //sets xOff to a random number between -40 and -10 and brings the window to the front
