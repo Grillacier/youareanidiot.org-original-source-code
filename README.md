@@ -7,3 +7,5 @@
 - upon downloading the source code folder to your computer, your antivirus will probably remove the download due to the "you.js" file within the download.<br>
 <b><i>if you're not looking for complications!:</i></b><br>
 you could just download <i><b>only</b></i> the "you-are-an-idiot-virus.html" file which sources all the other files from this repository <br>
+
+<title>2023 version</title>
